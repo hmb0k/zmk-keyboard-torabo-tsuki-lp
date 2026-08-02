@@ -56,9 +56,18 @@
 
         mouse_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                  &trans       &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                  &trans       &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                  &trans       &trans  &mkp MCLK  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                  &trans       &mkp LCLK  &mo 5  &mkp RCLK  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        scroll_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans
             >;
         };
