@@ -21,7 +21,7 @@
 };
 
 &pointing_listener {
-    input-processors = <&automouse_layer 4 0>,
+    input-processors = <&automouse_layer 1 0>,
                        <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
 
     /* While K is held, convert trackball movement into scrolling. */
