@@ -32,10 +32,10 @@
 
         main_layer {
             bindings = <
-&kp Q      &kp W     &kp E     &kp R         &kp T                 &kp Y             &kp U        &kp I      &kp O     &kp P
-&kp A      &kp S     &lt 3 D   &lt 2 F       &kp G                 &kp H             &kp J        &kp K      &kp L     &kp MINUS
-&kp Z      &kp X     &kp C     &kp V         &kp B                 &kp SPACE         &kp RET      &kp N      &kp M     &kp COMMA  &kp DOT           &kp SLASH
-&kp LCTRL  &kp LGUI  &kp LALT  &kp LEFT_GUI  &mt LEFT_SHIFT SPACE  &kp LS(LEFT_GUI)  &lt 2 ENTER  &lt 1 BSPC  &mt RSHIFT LANGUAGE_2  &kp LC(UP_ARROW)
+&kp Q      &kp W     &kp E     &kp R         &kp T                 &kp Y             &kp U        &kp I       &kp O                  &kp P
+&kp A      &kp S     &lt 3 D   &lt 2 F       &kp G                 &kp H             &kp J        &kp K       &kp L                  &kp MINUS
+&kp Z      &kp X     &kp C     &kp V         &kp B                 &kp SPACE         &kp RET      &kp N       &kp M                  &kp COMMA         &kp DOT  &kp SLASH
+&kp LCTRL  &kp LGUI  &kp LALT  &kp LEFT_GUI  &mt LEFT_SHIFT SPACE  &kp LS(LEFT_GUI)  &lt 4 ENTER  &lt 1 BSPC  &mt RSHIFT LANGUAGE_2  &kp LC(UP_ARROW)
             >;
         };
 
@@ -51,18 +51,18 @@
         symbol_layer {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &kp GRAVE  &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
-&trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans             &kp SEMI             &kp SINGLE_QUOTE
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans             &trans            &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans             &trans            &trans
+&trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans            &kp SEMI           &kp SINGLE_QUOTE
+&trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans            &trans             &trans            &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans            &trans             &trans
             >;
         };
 
         symbol_shift_layer {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &kp LS(GRAVE)  &kp LS(EQUAL)  &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp LS(BACKSLASH)
-&trans  &trans  &trans  &trans  &trans  &trans         &trans         &trans                   &kp LS(SEMI)             &kp LS(SINGLE_QUOTE)
-&trans  &trans  &trans  &trans  &trans  &trans         &trans         &trans                   &trans                    &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans         &trans         &trans                   &trans                    &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans         &trans         &trans                &kp LS(SEMI)           &kp LS(SINGLE_QUOTE)
+&trans  &trans  &trans  &trans  &trans  &trans         &trans         &trans                &trans                 &trans                &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans         &trans         &trans                &trans                 &trans
             >;
         };
 
