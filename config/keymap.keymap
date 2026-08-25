@@ -34,7 +34,7 @@
             bindings = <
 &kp Q      &kp W     &kp E    &kp R         &kp T                 &kp Y             &kp U        &kp I       &kp O   &kp P
 &kp A      &kp S     &lt 3 D  &lt 2 F       &kp G                 &kp H             &kp J        &kp K       &kp L   &kp MINUS
-&kp Z      &kp X     &kp C    &kp V         &kp B                 &trans            &trans       &kp N       &kp M   &kp COMMA         &kp DOT  &kp SLASH
+&kp Z      &kp X     &kp C    &kp V         &kp B                 &trans            &to 7        &kp N       &kp M   &kp COMMA         &kp DOT  &kp SLASH
 &kp LCTRL  &kp LALT  &trans   &kp LEFT_GUI  &mt LEFT_SHIFT SPACE  &kp LS(LEFT_GUI)  &lt 4 ENTER  &lt 1 BSPC  &trans  &kp LC(UP_ARROW)
             >;
         };
@@ -85,6 +85,43 @@
         };
 
         scroll_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        /* Cycle speed at position 26: normal -> slow -> fast -> normal. */
+        scroll_speed_slow_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &mo 8   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &to 9    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        scroll_slow_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        scroll_speed_fast_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &mo 10  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &to 0    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        scroll_fast_layer {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans

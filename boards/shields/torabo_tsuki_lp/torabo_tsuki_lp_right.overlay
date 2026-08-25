@@ -19,12 +19,27 @@
     input-processors = <&automouse_layer 5 0>,
                        <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
 
-    /* While K is held, convert trackball movement into scrolling. */
+    /* K normally enables scrolling at 1/8 speed. */
     scroller {
         layers = <6>;
         input-processors = <&zip_xy_to_scroll_mapper>,
                            <&zip_scroll_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
                            <&zip_scroll_scaler 1 8>;
+    };
+
+    /* The speed-cycle key selects either of these K-held scroll modes. */
+    slow_scroller {
+        layers = <8>;
+        input-processors = <&zip_xy_to_scroll_mapper>,
+                           <&zip_scroll_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
+                           <&zip_scroll_scaler 1 16>;
+    };
+
+    fast_scroller {
+        layers = <10>;
+        input-processors = <&zip_xy_to_scroll_mapper>,
+                           <&zip_scroll_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
+                           <&zip_scroll_scaler 1 4>;
     };
 };
 
