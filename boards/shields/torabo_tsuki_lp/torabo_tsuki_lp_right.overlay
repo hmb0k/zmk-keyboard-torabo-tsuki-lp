@@ -5,13 +5,13 @@
 / {
     /*
      * Enable the automouse layer on trackball movement without a timeout.
-     * Keep the layer active for I/J/K/L so their mouse bindings are used.
+     * Keep the layer active for U/I/O and J/K/L so their mouse bindings are used.
      * Any other key press dismisses the temporary mouse layer.
      */
     automouse_layer: automouse_layer {
         compatible = "zmk,input-processor-temp-layer";
         #input-processor-cells = <2>;
-        excluded-positions = <7 16 17 18>;
+        excluded-positions = <6 7 8 16 17 18>;
     };
 };
 
