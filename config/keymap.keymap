@@ -93,8 +93,8 @@
             >;
         };
 
-        /* Cycle speed at position 26: normal -> slow -> fast -> normal. */
-        scroll_speed_slow_layer {
+        /* Cycle speed at position 26: slow -> slower -> slowest -> slow. */
+        scroll_speed_slower_layer {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -103,7 +103,7 @@
             >;
         };
 
-        scroll_speed_fast_layer {
+        scroll_speed_slowest_layer {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans

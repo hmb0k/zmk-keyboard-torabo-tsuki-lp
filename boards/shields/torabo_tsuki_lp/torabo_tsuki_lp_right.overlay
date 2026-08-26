@@ -19,25 +19,25 @@
     input-processors = <&automouse_layer 5 0>,
                        <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
 
-    /* K enables scrolling. Speed layers modify only the scroll events. */
+    /* K enables scrolling. The default speed is the previous slow setting. */
     scroller {
         layers = <6>;
         input-processors = <&zip_xy_to_scroll_mapper>,
                            <&zip_scroll_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
-                           <&zip_scroll_scaler 1 8>;
+                           <&zip_scroll_scaler 1 16>;
         process-next;
     };
 
     /* The speed-cycle key selects these relative modifiers. */
-    slow_scroll_speed_modifier {
+    slower_scroll_speed_modifier {
         layers = <7>;
         input-processors = <&zip_scroll_scaler 1 2>;
         process-next;
     };
 
-    fast_scroll_speed_modifier {
+    slowest_scroll_speed_modifier {
         layers = <8>;
-        input-processors = <&zip_scroll_scaler 2 1>;
+        input-processors = <&zip_scroll_scaler 1 4>;
         process-next;
     };
 };
